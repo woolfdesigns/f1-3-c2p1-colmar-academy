@@ -1,0 +1,485 @@
+html{
+
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  width:100%;
+  margin:auto;
+
+}
+
+.header{
+  display: flex;
+
+  width: 100%;
+  background-color: white;
+  align-items: center;
+  color: Gainsboro;
+  height: 64px;
+
+}
+
+
+.header-logo{
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  padding-left: 24px;
+}
+
+.header-mobile{
+  display: flex;
+  width: 100%;
+  background-color: white;
+  align-items: center;
+  color: Gainsboro;
+  height: 64px;
+
+}
+
+
+.icons{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin: auto 24px;
+  justify-content: space-between;
+}
+
+
+.header img{
+  height: 32px;
+}
+
+
+nav{
+  padding-right: 24px;
+}
+
+nav span{
+  padding-left: 16px;
+}
+
+
+a{
+  color: Gainsboro;
+  text-decoration: none;
+}
+
+nav a:link {
+  color: Gainsboro;
+}
+
+nav a:hover{
+  color: dimgray;
+}
+
+.top{
+  background-color: Gainsboro;
+  color: grey;
+  padding: 32px 32px 32px 24px;
+
+}
+
+.banner{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.banner-img{
+  width: 60%;
+}
+
+
+.headline{
+  flex-direction: column;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 48px;
+}
+
+.headline h4{
+  font-weight: normal;
+
+  margin-bottom: 24px;
+  margin-top: 12px;
+}
+
+.button{
+  background-color: dimgray;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 50%;
+}
+
+.button p{
+  color: Gainsboro;
+  text-align: center;
+  font-weight: lighter;
+  margin: 0;
+  font-size: 10pt;
+}
+
+
+p{
+  font-weight: lighter;
+  font-size: 10pt;
+}
+
+h1, h2, h3, h4, p{
+  color:dimgray;
+  margin: 15px 0px;
+}
+
+
+.articles{
+  display: flex;
+  background-color: white;
+  flex-direction: row;
+  padding: 32px 0px 32px 24px;
+}
+
+.main-article {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.main-article img{
+  width: 100%;
+  height: auto;
+}
+
+.side-articles{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding-left: 24px;
+}
+
+.small-article{
+  padding:16px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.small-img{
+  width: 35%;
+  height: auto;
+}
+
+.small-text{
+  width:65%;
+  padding: 0px 10px;
+}
+
+p.author{
+  font-size: 10pt;
+  font-weight: bold;
+}
+
+p.sub{
+  font-size: 10pt;
+  font-weight: lighter;
+}
+
+
+a.read{
+  font-size: 9pt;
+}
+
+a:link {
+  color: DeepSkyBlue;
+}
+
+a:hover {
+  color: DodgerBlue;
+}
+
+.small-text h4 {
+
+  font-weight: normal;
+}
+
+.small-article:hover{
+  background-color: Gainsboro;
+}
+
+.learn{
+  background-color: Gainsboro;
+  padding: 32px 16px;
+
+}
+
+.learn h1{
+  text-align: center;
+  margin: 0;
+
+}
+
+
+.courses{
+  display: flex;
+
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+}
+
+
+
+.course{
+  width: 30%;
+  background-color: white;
+  margin-top:32px;
+  margin-left: 16px;
+  margin-right: 16px;
+
+}
+
+
+
+.course-text{
+  padding: 16px;
+}
+
+.course-text h4{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.course-text p{
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.course-image{
+  max-width:100%;
+  max-height:100%;
+
+}
+
+.thesis h1{
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 0;
+
+
+}
+
+.main-article video{
+  width: 100%;
+  height: auto;
+}
+
+.footer{
+  display: flex;
+  width: 100%;
+  background-color: white;
+  align-items: center;
+  color: Gainsboro;
+  height: 64px;
+  border-top: 1px solid Gainsboro;
+  padding-top:16px;
+}
+
+.copywright{
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  padding-left: 24px;
+}
+
+.footer span{
+  font-size: 10pt;
+}
+
+
+
+@media only screen and (min-width: 470px) {
+    .header-mobile {
+      display: none;
+    }
+
+    .small-img-mobile{
+      display: none;
+    }
+
+    .courses-mobile{
+      display: none;
+    }
+
+    .mobile-video{
+      display: none;
+    }
+
+    .copywright-mobile{
+      display: none;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 470px) {
+  .header {
+    display: none;
+  }
+
+  .top{
+    padding: 0px 0px 32px 0px;
+  }
+
+  .top img{
+    width: 100%;
+    height: auto;
+  }
+
+  .headline{
+    padding: 0px 16px;
+  }
+
+  .banner {
+    flex-direction: column;
+  }
+
+  .button{
+    width: 100%;
+  }
+
+  .headline h1{
+    margin: 32px auto;
+  }
+
+  .button p{
+    font-size: 16pt;
+    font-weight: normal;
+  }
+
+  .main-article{
+    display:none;
+  }
+
+  .articles{
+    padding:0px;
+  }
+
+  .side-articles{
+    width: 100%;
+    padding-left:0px;
+    padding-bottom: 32px;
+  }
+
+
+  .small-text{
+    width:100%;
+    padding-left:32px;
+  }
+
+  .small-article{
+    flex-direction: column;
+    padding:16px;
+
+  }
+
+  .small-img{
+    display: none;
+  }
+
+  .small-img-mobile{
+    width: 100%;
+
+  }
+
+  h1{
+    font-size: 2.5em;
+  }
+
+  h4{
+    font-size:20pt;
+    font-weight: normal;
+  }
+
+  p.sub{
+    font-size: 13pt;
+  }
+
+  a.read{
+    font-size: 13pt;
+  }
+
+  .learn{
+    background-color: white;
+    border-top: 1px solid Gainsboro;
+    border-bottom: 1px solid Gainsboro;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .learn h1{
+    margin-bottom: 16px;
+  }
+
+  .courses{
+    display:none;
+  }
+
+  .courses-mobile .button{
+    width: auto;
+    background-color: Gainsboro;
+    padding: 24px 16px;
+    margin-top: 8px;
+  }
+
+  .courses-mobile .button:hover{
+    background-color: silver;
+
+  }
+
+.button h4{
+    margin: 0px;
+  }
+
+
+.thesis .articles{
+  display:none;
+}
+
+video{
+  margin-top: 16px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+
+.footer{
+  border-top:none;
+  padding-top: 0px;
+}
+
+.footer span{
+  font-size: 12pt;
+  margin-left: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  color: black;
+}
+
+
+.terms{
+  display: none;
+}
+
+.copywright{
+  display: none;
+
+}
+
+
+}
